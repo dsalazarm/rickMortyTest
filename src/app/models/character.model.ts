@@ -6,4 +6,5 @@ export interface CharacterModel {
   gender: string;
   lastLocation: string;
   species: string;
+  lastEpisode?: number;
 }

@@ -1,9 +1,13 @@
 <article class="card">
-  <div>
-    <img src="{{ character.imgRoute }}" alt="{{ character.name }}">
-    <h5>{{ character.name }}</h5>
+  <div style="position: relative">
+    <img src="{{ character.imgRoute }}"
+         alt="{{ character.name }}"
+         style="width: 100%">
+    <div style="position: absolute; bottom: 0px;  height: 35px; width: 100%; background-color: rgba(51, 51, 51, 0.5)">
+      <h5 style="margin-left: 10px; color: white">{{ character.name }}</h5>
+    </div>
   </div>
-  <div>
+  <div class="background--dark">
     <div class="row">
       <div class="col light-text">STATUS</div>
       <div class="col orange-text ta-right">{{ character.status }}</div>
