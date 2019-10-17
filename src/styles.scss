@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+$dark-text: rgb(51, 51, 51);
+$light-text: rgb(158, 158, 158);
+$orange-text: rgb(255, 152, 0);
+$dark-background: #202329;
+$light-background: #FFFFFF;
+
+.background {
+  &--dark {
+    background-color: $dark-background;
+  }
+  &--light {
+    background-color: $light-background;
+  }
+}
+
+.dark-text {
+  color: $dark-text;
+}
+
+.light-text {
+  color: $light-text
+}
+
+.orange-text {
+  color: $orange-text;
+}
+
+.card {
+  background-color: rgb(51, 51, 51);
+  box-shadow:  0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  margin: 0.625rem;
+  &-title {
+    color: rgb(245, 245, 245);
+  }
+}
+
+.ta-right {
+  text-align: right;
+}
